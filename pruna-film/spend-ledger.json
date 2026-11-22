@@ -1,7 +1,8 @@
 {
-    "currency": "USD",
-    "approved_limit": 0,
-    "spent_estimate": 0,
-    "requests": [],
-    "note": "Raise approved_limit only with the owner's explicit approval. Estimates from list prices; the Pruna dashboard is the source of truth."
+  "currency": "USD",
+  "approved_limit": 2.5,
+  "spent_estimate": 0,
+  "requests": [],
+  "note": "Raise approved_limit only with the owner's explicit approval. Estimates from list prices; the Pruna dashboard is the source of truth.",
+  "approval": "2026-11-22: owner approved $2.50 total for the Pruna demo (480p demo, retries and 1080p upscale). Start with the hoopoe shots."
 }

@@ -1,0 +1,17 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Scene,Amiri,112,&H00EAF5FF,&H000000FF,&H60000000,&H78000000,-1,0,0,0,100,100,0,0,1,2.5,4,8,80,80,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:03.80,Scene,,0,0,0,,{\fad(500,350)\blur1}من أعالي جبل الشيخ
+Dialogue: 0,0:00:04.25,0:00:06.85,Scene,,0,0,0,,{\fad(400,300)\blur1}إلى حقول القمح الجبلي
+Dialogue: 0,0:00:07.25,0:00:09.85,Scene,,0,0,0,,{\fad(400,300)\blur1}طحين القمح الكامل
+Dialogue: 0,0:00:10.25,0:00:12.85,Scene,,0,0,0,,{\fad(400,300)\blur1}يُعجن بالماء والملح
+Dialogue: 0,0:00:13.25,0:00:16.70,Scene,,0,0,0,,{\fad(400,350)\blur1}ويُخبز على الصاج

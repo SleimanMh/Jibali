@@ -207,10 +207,12 @@ def run_cut(src_dir, tag):
     reveal = (HERE / PLAN["reveal"]["file"]).resolve()
     titles = work / "titles.ass"
     shutil.copy(REPO / "output/brand-film-45/closing-titles.ass", titles)
+    captions = work / "captions.ass"
+    shutil.copy(HERE / "arabic-captions.ass", captions)
     inputs = sum([["-i", str(p)] for p in parts + [reveal]], [])
     chain = "".join(f"[{i}:v]" for i in range(len(parts) + 1))
     silent = work / f"jibali-{tag}-silent.mp4"
-    ff(*inputs, "-filter_complex", f"{chain}concat=n={len(parts) + 1}:v=1:a=0,settb=1/24,setpts=N,fps=24,subtitles={titles}[v]",
+    ff(*inputs, "-filter_complex", f"{chain}concat=n={len(parts) + 1}:v=1:a=0,settb=1/24,setpts=N,fps=24,subtitles={captions},subtitles={titles}[v]",
        "-map", "[v]", "-c:v", "libx264", "-preset", "slow", "-crf", "14", "-pix_fmt", "yuv420p", "-an", str(silent))
     # music + hoopoe call: reuse the project's bed and scene-01 call until AI music is generated
     for name in ("music/bed.wav", "voice/tagline.wav"):
