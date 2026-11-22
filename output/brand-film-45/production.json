@@ -128,9 +128,11 @@
             "start_frame": 408,
             "end_frame_exclusive": 480,
             "time": "17-20s",
-            "method": "Original product photo with free local cinematic push-in; no paid generation",
+            "method": "Original product photo, free local push-in inside a composed end card (scripts/render-scene-06.py); no paid generation",
             "input": "../../references/bread-2026-11-20/WhatsApp Image 2026-11-20 at 8.38.25 PM.jpeg",
-            "prompt": "Orient original photograph upright and crop conservatively. Keep exact original green-and-gold package, Arabic bird logo, label text, product geometry and proportions. Do not repaint or reconstruct label. Place restrained closing typography only in clean space."
+            "prompt": "Orient original photograph upright and crop conservatively. Keep exact original green-and-gold package, Arabic bird logo, label text, product geometry and proportions. Do not repaint or reconstruct label. Place restrained closing typography only in clean space.",
+            "status": "DONE 2026-11-22: output/brand-film-45/scenes/06-product-reveal.mp4 (clean, 72 frames, no audio) and 06-product-reveal-titled-preview.mp4 (closing titles burned in, preview only).",
+            "layout": "A full-frame 9:16 push-in would crop the label (it fills ~72% of the photo width), so the photo sits in a 1080x1350 (4:5) panel with a ~1.13x ease-out push-in that keeps the whole label in frame on every frame, above a 2 px gold rule and a band in the label's own green (sampled from the photo: RGB 45,101,96; gold 206,162,115). Closing titles sit in that band, clear of the bottom ~320 px Reels interface. Pixels come only from cropping/resizing the original photo: no repainting or colour grading."
         }
     ],
     "closing_text": [
@@ -271,5 +273,6 @@
         "Audio was added on 2026-11-22 at the user's request; the earlier 'completely silent' requirement is superseded."
     ],
     "audio_timeline_file": "audio-timeline.csv",
-    "closing_voice_file": "audio/voice/tagline.wav"
+    "closing_voice_file": "audio/voice/tagline.wav",
+    "closing_titles_style": "Amiri (Naskh) font: جبالي in label gold at 150, tagline in cream at 78, 0.45 s fade-in, placed in the green band. Contains an invisible right-to-left mark so the full stop renders at the end of the Arabic sentence."
 }
