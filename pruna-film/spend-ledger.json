@@ -1,0 +1,7 @@
+{
+    "currency": "USD",
+    "approved_limit": 0,
+    "spent_estimate": 0,
+    "requests": [],
+    "note": "Raise approved_limit only with the owner's explicit approval. Estimates from list prices; the Pruna dashboard is the source of truth."
+}

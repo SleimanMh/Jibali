@@ -1,0 +1,54 @@
+{
+    "title": "JIBALI — من قلب الجبل، لقلب البيت. (Pruna cinematic version)",
+    "format": {"aspect_ratio": "9:16", "fps": 24, "length_seconds": 20, "final": "1080x1920"},
+    "style": "Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "hoopoe": "Eurasian hoopoe (Upupa epops): orange-buff body, bold black-and-white barred wings and tail, long slender down-curved bill, fan-shaped crest with black tips",
+    "stills": [
+        {
+            "id": "hoopoe-ref",
+            "purpose": "Character reference so the same bird appears in shots 01 and 02",
+            "model": "p-image",
+            "input": {"prompt": "Photoreal wildlife photograph of a single Eurasian hoopoe (Upupa epops) perched on a pale limestone rock, side profile, crest fully fanned with black tips, orange-buff body, bold black-and-white barred wings, long slender down-curved bill, soft golden morning light, plain blurred mountain background, sharp feather detail", "aspect_ratio": "1:1"}
+        },
+        {
+            "id": "01-hermon",
+            "model": "p-image-edit",
+            "refs": ["refs/hermon-rashaya.jpg", "@hoopoe-ref"],
+            "input": {"prompt": "Using image 1 as the exact location (Rashaya village with red tiled roofs below the snow-capped ridge of Mount Hermon), create a photoreal cinematic sunrise view. Add the hoopoe from image 2 flying across the foreground in mid-flight, wings spread showing black-and-white bars, crest folded. Warm low sun, light haze in the valley, 35mm film look. No text.", "aspect_ratio": "9:16"}
+        },
+        {
+            "id": "02-wheat",
+            "model": "p-image-edit",
+            "refs": ["@hoopoe-ref", "refs/hermon-rashaya.jpg"],
+            "input": {"prompt": "Photoreal cinematic shot: the hoopoe from image 1 landing on a small pale limestone rock in a field of ripe golden whole-wheat on a Lebanese mountain slope, Mount Hermon softly out of focus in the distance like image 2, golden-hour backlight through the wheat ears, shallow depth of field. No text.", "aspect_ratio": "9:16"}
+        },
+        {
+            "id": "03-mill",
+            "model": "p-image",
+            "input": {"prompt": "Photoreal cinematic close-up inside an old Lebanese stone water mill: a traditional horizontal millstone pair, the upper runner stone turning on the lower bedstone, whole-wheat kernels trickling from a wooden hopper into the centre eye, fresh bran-flecked whole-wheat flour spilling from the rim into a wooden trough, shafts of warm window light with flour dust in the air, limestone walls, 35mm film look. No text.", "aspect_ratio": "9:16"}
+        },
+        {
+            "id": "04-knead",
+            "model": "p-image",
+            "input": {"prompt": "Photoreal cinematic overhead-angle close-up of a Lebanese grandmother's hands kneading whole-wheat dough in a wide wooden bowl on a rustic table, a little water glistening and a few coarse salt crystals on the flour, flour on the fingers and wrists, soft warm window light, natural skin texture, correct anatomy with five fingers on each hand, 35mm film look. No yeast, no bread rising. No text.", "aspect_ratio": "9:16"}
+        },
+        {
+            "id": "05-saj",
+            "model": "p-image-edit",
+            "refs": ["refs/saj-stack.jpg"],
+            "input": {"prompt": "Photoreal cinematic shot: a very thin, large round whole-wheat Lebanese saj bread, exactly as thin and porous as the bread in image 1, cooking on a dark convex domed metal saj griddle over a small controlled wood fire, small golden-brown bubbles and spots forming, gentle glow of embers, a stack of finished thin saj beside it, warm rustic outdoor kitchen at dusk, 35mm film look. No text.", "aspect_ratio": "9:16"}
+        }
+    ],
+    "clips": [
+        {"id": "01", "start": 0, "use_seconds": 4, "image": "@01-hermon", "prompt": "The hoopoe flies smoothly across the frame from left to right above the valley, natural undulating flight with real wingbeats, gentle slow aerial camera drift, sunrise light flickers through the haze. Realistic physics, the bird keeps the same appearance."},
+        {"id": "02", "start": 4, "use_seconds": 3, "image": "@02-wheat", "prompt": "The hoopoe touches down on the limestone rock, its feet grip the stone, it folds its barred wings and raises its fan-shaped crest; ripe wheat sways softly in the breeze. Slow cinematic push-in. Realistic physics."},
+        {"id": "03", "start": 7, "use_seconds": 3, "image": "@03-mill", "prompt": "The upper millstone turns slowly and steadily, kernels trickle into the eye, whole-wheat flour pours gently from the rim into the trough, dust drifts through the light beams. Static camera with a very slight push-in."},
+        {"id": "04", "start": 10, "use_seconds": 3, "image": "@04-knead", "prompt": "A small stream of water is poured into the flour, then both hands press and fold the dough with the heels of the palms in a steady rhythm. Natural hand movement, stable fingers, the bowl stays still. No extra ingredients."},
+        {"id": "05", "start": 13, "use_seconds": 4, "image": "@05-saj", "prompt": "The thin saj bread bakes on the hot dome: small bubbles rise and turn golden-brown, faint heat shimmer, the small wood fire flickers below. Slow cinematic push-in. The bread stays paper-thin."}
+    ],
+    "reveal": {"id": "06", "start": 17, "use_seconds": 3, "file": "../output/brand-film-45/scenes/06-product-reveal.mp4", "note": "Real package photo, already made; label kept exact. Closing titles from ../output/brand-film-45/closing-titles.ass."},
+    "audio": {
+        "demo": "Music bed plus natural sound: the hoopoe's call (hudhud, هدهد: a soft 'hoo-poo-poo'), wheat rustle, millstone and flour, water and kneading, wood fire and saj sizzle. p-video-2-pro returns generated sound with every clip; keep what fits and layer music and the hoopoe call on top.",
+        "later": "Arabic voice tagline (human recording preferred; see ../audio/VOICE-RECORDING-GUIDE.md)."
+    }
+}
