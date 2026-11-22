@@ -81,10 +81,38 @@ def clips(ids, dry):
             P.predict("p-video-2-pro", inp, dest)
 
 
+NATURAL = ("Keep this exact scene, composition and subject, but make it look like an authentic, unedited smartphone photo "
+           "taken in a real Lebanese village bakery: natural uneven daylight from a doorway, true-to-life colours, slight sensor "
+           "noise, real imperfect textures, a little flour dust and wear, nothing glossy, polished or perfect, no cinematic "
+           "colour grade, no shallow-depth-of-field glamour. Photoreal. No text.")
+WAN_MOTION = {
+    "sajbread": "Handheld phone video, real time: the very thin bread on the hot saj dome gently puffs and small bubbles rise and brown, faint steam drifts up. Nothing changes shape unnaturally.",
+    "stack": "Handheld phone video, real time: faint steam rises from the warm stack of thin saj bread on the cloth, the camera moves very slightly. Nothing changes shape.",
+}
+
+
+def natural(ids, dry):
+    for sid in ids:
+        dest = OUT / "natural" / f"{sid}.jpg"
+        inp = {"prompt": NATURAL, "images": [P.resolve_ref(f"out/v2/keyframes/{sid}.jpg", dry)], "aspect_ratio": "9:16", "turbo": False}
+        if P.charge("p-image-edit", P.PRICE["p-image-edit"], f"v2 natural keyframe {sid}", dry):
+            P.predict("p-image-edit", inp, dest)
+
+
+def wan(ids, dry, res="480p"):
+    for sid in ids:
+        kf = OUT / "natural" / f"{sid}.jpg"
+        dest = OUT / f"wan-{res}" / f"{sid}.mp4"
+        inp = {"prompt": WAN_MOTION[sid], "image": "DRY" if dry else P.upload(kf), "num_frames": 81, "resolution": res,
+               "frames_per_second": 16, "interpolate_output": True, "go_fast": False}
+        if P.charge("wan-i2v", P.PRICE["wan-i2v"][res], f"wan 2.2 clip {sid} {res}", dry):
+            P.predict("wan-i2v", inp, dest)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["keyframes", "clips"])
+    ap.add_argument("cmd", choices=["keyframes", "clips", "natural", "wan"])
     ap.add_argument("ids", nargs="*")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
-    (keyframes if a.cmd == "keyframes" else clips)(a.ids, a.dry_run)
+    {"keyframes": keyframes, "clips": clips, "natural": natural, "wan": wan}[a.cmd](a.ids, a.dry_run)

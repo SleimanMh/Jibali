@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Keep this exact scene, composition and subject, but make it look like an authentic, unedited smartphone photo taken in a real Lebanese village bakery: natural uneven daylight from a doorway, true-to-life colours, slight sensor noise, real imperfect textures, a little flour dust and wear, nothing glossy, polished or perfect, no cinematic colour grade, no shallow-depth-of-field glamour. Photoreal. No text.",
+    "images": [
+      "https://api.pruna.ai/v1/files/MmNjM2U4ZDQtNzJhNi00ODQ4LWFkMDQtMmZmZjRlYTMzOTQ3.jpg"
+    ],
+    "aspect_ratio": "9:16",
+    "turbo": false
+  },
+  "result": {
+    "id": "pedhrdvansrmw0d20eb9da4tkw",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/MmNjM2U4ZDQtNzJhNi00ODQ4LWFkMDQtMmZmZjRlYTMzOTQ3.jpg"
+      ],
+      "prompt": "Keep this exact scene, composition and subject, but make it look like an authentic, unedited smartphone photo taken in a real Lebanese village bakery: natural uneven daylight from a doorway, true-to-life colours, slight sensor noise, real imperfect textures, a little flour dust and wear, nothing glossy, polished or perfect, no cinematic colour grade, no shallow-depth-of-field glamour. Photoreal. No text.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/pedhrdvansrmw0d20eb9da4tkw",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/USQjD4Cbyx7KDZAUkWqC3VbAMjMZdvMHFk5Xcwk97rLapC5F/fb12ad44-324b-480c-a9ef-b88d759f4be6.jpeg",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.96067478
+      }
+    }
+  }
+}

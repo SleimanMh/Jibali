@@ -49,6 +49,7 @@ PRICE = {
         ("768p", "cost"): 0.025, ("768p", "speed"): 0.035, ("768p", "quality"): 0.075,
     },
     "p-video-upscale": {"720p": 0.01, "1080p": 0.02, "2k": 0.04, "4k": 0.08},  # per second, <=30 fps
+    "wan-i2v": {"480p": 0.05, "720p": 0.11},  # per video (Wan 2.2 A14B on Pruna), checked 2026-11-22
 }
 CLIP_SECONDS = 5  # p-video-2-pro minimum; we use 3-4 s of each
 

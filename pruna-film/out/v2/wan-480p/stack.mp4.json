@@ -1,0 +1,34 @@
+{
+  "model": "wan-i2v",
+  "input": {
+    "prompt": "Handheld phone video, real time: faint steam rises from the warm stack of thin saj bread on the cloth, the camera moves very slightly. Nothing changes shape.",
+    "image": "https://api.pruna.ai/v1/files/YWVlNDMyN2QtNjAyYi00ZGVkLWEwODEtYzMzMTAyNDc4N2M4.jpg",
+    "num_frames": 81,
+    "resolution": "480p",
+    "frames_per_second": 16,
+    "interpolate_output": true,
+    "go_fast": false
+  },
+  "result": {
+    "id": "e8zw0rkkxdrmt0d20ebvemqqdw",
+    "model": "wan-i2v",
+    "input": {
+      "frames_per_second": 16,
+      "go_fast": false,
+      "image": "https://api.replicate.com/v1/files/YWVlNDMyN2QtNjAyYi00ZGVkLWEwODEtYzMzMTAyNDc4N2M4.jpg",
+      "interpolate_output": true,
+      "num_frames": 81,
+      "prompt": "Handheld phone video, real time: faint steam rises from the warm stack of thin saj bread on the cloth, the camera moves very slightly. Nothing changes shape.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/e8zw0rkkxdrmt0d20ebvemqqdw",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 56.612927658
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/CprWBCSQXLr1AtkKqcRfOo5G8vROFh79TdaZRHQuDBbxTFyLA/output_30fps.mp4"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "model": "wan-i2v",
+  "input": {
+    "prompt": "Handheld phone video, real time: the very thin bread on the hot saj dome gently puffs and small bubbles rise and brown, faint steam drifts up. Nothing changes shape unnaturally.",
+    "image": "https://api.pruna.ai/v1/files/ODQzZmRmMGMtYjU5Mi00MjdhLTk0YjItMjVmNWQ0ZTU5ODZl.jpg",
+    "num_frames": 81,
+    "resolution": "480p",
+    "frames_per_second": 16,
+    "interpolate_output": true,
+    "go_fast": false
+  },
+  "result": {
+    "id": "62mec6xk51rmt0d20ebbbrfc7c",
+    "model": "wan-i2v",
+    "input": {
+      "frames_per_second": 16,
+      "go_fast": false,
+      "image": "https://api.replicate.com/v1/files/ODQzZmRmMGMtYjU5Mi00MjdhLTk0YjItMjVmNWQ0ZTU5ODZl.jpg",
+      "interpolate_output": true,
+      "num_frames": 81,
+      "prompt": "Handheld phone video, real time: the very thin bread on the hot saj dome gently puffs and small bubbles rise and brown, faint steam drifts up. Nothing changes shape unnaturally.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/62mec6xk51rmt0d20ebbbrfc7c",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 46.441415471
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/oCz8CP1WNuLlCJgArNmdf6yFVqGt6mrSsQDva7S2Fl9TTFyLA/output_30fps.mp4"
+  }
+}

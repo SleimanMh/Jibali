@@ -1,7 +1,7 @@
 {
   "currency": "USD",
   "approved_limit": 2.5,
-  "spent_estimate": 2.2,
+  "spent_estimate": 2.32,
   "requests": [
     {
       "time": "2026-11-22T13:33:30",
@@ -200,6 +200,30 @@
       "model": "p-video-2-pro",
       "note": "v2 clip stack 480p speed",
       "estimate": 0.1
+    },
+    {
+      "time": "2026-11-22T14:08:38",
+      "model": "p-image-edit",
+      "note": "v2 natural keyframe sajbread",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T14:08:45",
+      "model": "p-image-edit",
+      "note": "v2 natural keyframe stack",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T14:08:57",
+      "model": "wan-i2v",
+      "note": "wan 2.2 clip sajbread 480p",
+      "estimate": 0.05
+    },
+    {
+      "time": "2026-11-22T14:09:46",
+      "model": "wan-i2v",
+      "note": "wan 2.2 clip stack 480p",
+      "estimate": 0.05
     }
   ],
   "note": "Raise approved_limit only with the owner's explicit approval. Estimates from list prices; the Pruna dashboard is the source of truth.",

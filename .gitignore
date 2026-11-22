@@ -11,3 +11,6 @@ pruna-film/out/v2/*
 !pruna-film/out/v2/clips-480p/
 !pruna-film/out/jibali-v2-480p.mp4
 __pycache__/
+!pruna-film/out/v2/natural/
+!pruna-film/out/v2/wan-480p/
+!pruna-film/out/v2/compare-wan22-vs-current.mp4
