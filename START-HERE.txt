@@ -5,7 +5,8 @@ This package contains the project files, source references, generated storyboard
 
 CURRENT REQUIREMENTS — THESE SUPERSEDE EARLIER VERSIONS
 20 seconds maximum; vertical 9:16; 1080 x 1920 export; 24 fps; 480 frames.
-Completely silent: no narration, music, sound effects or audio stream.
+AUDIO (updated 22 Nov 2026, supersedes the earlier silent brief): spoken Arabic voice tagline at 17.2–19.8 s matching the closing title, a quiet oud/ney music bed, and synced natural sound effects (wind, hoopoe, mill, water, fire). One stereo audio stream at -14 LUFS.
+Voice: real Lebanese voice recorded on a phone (free) — see audio/VOICE-RECORDING-GUIDE.md. AI voice only as a separately approved fallback.
 Authentic, ultra-photoreal Lebanese heritage mood; wheat, water, salt and fire.
 No yeast, starter or fermentation scenes. Do not alter existing words printed on the actual product label.
 Hoopoe flies over Mount Hermon then lands in a wheat field.
@@ -19,6 +20,9 @@ output/brand-film-45/edit-timeline.csv — six-scene frame ranges.
 output/brand-film-45/cost-estimate.json — last checked estimate and controls.
 output/brand-film-45/spend-ledger.json — no spending approved or recorded.
 output/brand-film-45/closing-titles.ass — only the closing Arabic lines.
+output/brand-film-45/audio-timeline.csv — voice, music and per-scene sound-effect placement.
+audio/VOICE-RECORDING-GUIDE.md — how to record the spoken tagline.
+scripts/mix-audio.sh — free local FFmpeg mix: adds voice, ducked music and SFX to the silent 20 s picture, normalises to -14 LUFS and verifies the export.
 
 LATEST TIMELINE
 0–4: Hoopoe flies above Mount Hermon at sunrise.
@@ -27,26 +31,32 @@ LATEST TIMELINE
 10–13: Salt and water photographic inserts, then kneading motion.
 13–17: Very thin Lebanese saj cooks on a convex griddle over a controlled wood fire.
 17–20: Original product photograph, subtle local push-in, original logo preserved.
-Closing text:
+Closing text (shown on screen AND spoken by the voice, 17.2–19.8 s):
 جبالي
 من قلب الجبل، لقلب البيت.
 
 BUDGET / APPROVAL STATUS
-NO paid fal video or audio generation has started. The latest $1 first-pass proposal has NOT been approved. The user requested this handover instead of approving generation.
+NO paid fal video or audio generation has started. The first-pass proposal (now $1.25 including audio) has NOT been approved. The user requested this handover instead of approving generation.
 Last verified public estimate, not a guaranteed future quote:
 5 Wan 2.2 Turbo 720p videos x $0.10 = $0.50.
 7 Seedream v4 reference-based stills x $0.03 = $0.21.
-Local FFmpeg editing, original-photo reveal, resize and audio = $0.
-Base estimate = $0.71. Proposed first-pass all-in ceiling = $1, leaving $0.29 for any taxes/fees.
+1 Stable Audio 2.5 music bed x $0.20 = $0.20.
+MMAudio v2 sound effects, ~17 s x $0.001/s = $0.02.
+Voice tagline recorded by a person = $0. (Optional AI voice fallback ~$0.10, not approved.)
+Local FFmpeg editing, original-photo reveal, resize and audio mixing = $0.
+Base estimate = $0.93 ($1.03 with AI voice). Proposed first-pass all-in ceiling = $1.25, leaving headroom for any taxes/fees.
 Absolute total cap remains $10. That is not authorization to spend $10.
 Prices must be rechecked, including all fees. No automatic retries, model changes, extra outputs or top-ups. If a minimum deposit would exceed the budget, stop.
 Wan endpoint lists retirement on January 4, 2027. Availability must be checked.
 https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo
 https://fal.ai/models/fal-ai/bytedance/seedream/v4/edit
+https://fal.ai/models/fal-ai/stable-audio-25/text-to-audio
+https://fal.ai/models/fal-ai/mmaudio-v2
+https://fal.ai/models/fal-ai/elevenlabs/tts/multilingual-v2
 
 AVAILABLE / MISSING
 Included: four original Jibali product photos, original ZIP upload, four Rashaya/saj JFIF references, three generated storyboards, historical 20-second slideshow and its components, production plan and budget files.
-Not yet made: the seven latest-plan keyframes, five AI motion clips and final silent 20-second film. The existing preview is NOT the current final film.
+Not yet made: the seven latest-plan keyframes, five AI motion clips and the final 20-second film (silent picture plus audio mix). The existing preview is NOT the current final film.
 fal access was not confirmed. The next operator needs their own authorized connection or locally configured API credential; never paste secrets into chat. No credentials are included here.
 Local FFmpeg was available on the original machine. The recipient needs their own installation to edit/export locally.
 
@@ -64,12 +74,13 @@ The historical preview renderer has been disabled because it produces a supersed
 The original project remains in place. Only the handover copy has portable reference-path adjustments.
 
 NEXT STEPS
-1. Read production.json and this note; retain the silent 20-second brief.
+1. Read production.json and this note; retain the 20-second brief, now with audio.
 2. Recheck current rates and access; obtain explicit approval for the proposed spending amount.
 3. Generate/inspect the first hoopoe keyframe and motion clip first ($0.13 base estimate). If poor, stop and seek approval before any paid retry.
 4. Prepare remaining keyframes and clips within approved limit. Inspect mill mechanics, hand anatomy, bread thinness and bird consistency.
 5. Assemble with straight cuts, original-photo reveal and restrained Arabic closing titles.
-6. Verify exactly 480 frames at 24fps, 1080x1920, no audio streams, intact logo and spending within both approved and hard caps.
+6. Record the voice tagline (free), generate the music bed and per-scene sound effects, listen, then run scripts/mix-audio.sh on the silent picture.
+7. Verify exactly 480 frames at 24fps, 1080x1920, exactly one 48 kHz stereo audio stream of 20 s at about -14 LUFS, voice matching the closing title, intact logo and spending within both approved and hard caps.
 
 CONTINUATION PROMPT FOR YOUR FRIEND
-"Continue the JIBALI project in this extracted folder. Read START-HERE.txt and output/brand-film-45/production.json. The active brief is a silent 20-second vertical Reel, with an absolute $10 total cap and no paid retries. No paid generation has been approved. Recheck the $0.71 first-pass estimate and ask for approval before any paid requests. Keep original product packaging exact and use the supplied Rashaya/saj references."
+"Continue the JIBALI project in this extracted folder. Read START-HERE.txt and output/brand-film-45/production.json. The active brief is a 20-second vertical Reel with a spoken Arabic voice tagline, music and sound effects (see audio-timeline.csv and scripts/mix-audio.sh), with an absolute $10 total cap and no paid retries. No paid generation has been approved. Recheck the $0.93 first-pass estimate and ask for approval before any paid requests. Keep original product packaging exact and use the supplied Rashaya/saj references."

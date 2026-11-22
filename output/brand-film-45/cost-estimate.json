@@ -1,53 +1,90 @@
 ﻿{
-    "currency":  "USD",
-    "checked":  "2026-11-22",
-    "hard_total_cap":  10,
-    "approved":  false,
-    "approved_spend_limit":  0,
-    "spent":  0,
-    "proposed_first_pass_limit":  1,
-    "line_items":  [
-                       {
-                           "item":  "Seven reference-based stills",
-                           "quantity":  7,
-                           "unit_cost":  0.03,
-                           "subtotal":  0.21
-                       },
-                       {
-                           "item":  "Five 720p Wan Turbo clips",
-                           "quantity":  5,
-                           "unit_cost":  0.10,
-                           "subtotal":  0.50
-                       },
-                       {
-                           "item":  "Original-photo product reveal, FFmpeg editing, titles, local resize",
-                           "quantity":  1,
-                           "unit_cost":  0,
-                           "subtotal":  0
-                       },
-                       {
-                           "item":  "Audio and paid upscaling",
-                           "quantity":  0,
-                           "unit_cost":  0,
-                           "subtotal":  0
-                       }
-                   ],
-    "estimated_generation_total":  0.71,
-    "tax_fee_headroom_within_first_pass_limit":  0.29,
-    "retry_allowance":  0,
-    "paid_retries_require_separate_approval":  true,
-    "sources":  [
-                    "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo",
-                    "https://fal.ai/models/fal-ai/bytedance/seedream/v4/edit"
-                ],
-    "controls":  [
-                     "Get explicit approval before any billable request.",
-                     "Approval of first pass does not authorize remaining hard-cap balance.",
-                     "Check current quoted charge including taxes/fees before submission; if unavailable or uncertain stop.",
-                     "Maintain spent plus reserved in-flight cost; never exceed approved limit or $10 total including any taxes/fees.",
-                     "Sequential requests, one output per request. No automatic retries, paid upgrades, audio or upscaling.",
-                     "If a request times out, reconcile status and billing before another request; never blindly resubmit.",
-                     "No account top-up or purchase exceeding remaining total cap. If provider requires a larger minimum deposit, stop and report.",
-                     "Wan endpoint lists retirement on January 4, 2027. Recheck availability; no automatic model substitution."
-                 ]
+    "currency": "USD",
+    "checked": "2026-11-22",
+    "hard_total_cap": 10,
+    "approved": false,
+    "approved_spend_limit": 0,
+    "spent": 0,
+    "proposed_first_pass_limit": 1.25,
+    "line_items": [
+        {
+            "item": "Seven reference-based stills",
+            "quantity": 7,
+            "unit_cost": 0.03,
+            "subtotal": 0.21
+        },
+        {
+            "item": "Five 720p Wan Turbo clips",
+            "quantity": 5,
+            "unit_cost": 0.1,
+            "subtotal": 0.5
+        },
+        {
+            "item": "Original-photo product reveal, FFmpeg editing, titles, local resize",
+            "quantity": 1,
+            "unit_cost": 0,
+            "subtotal": 0
+        },
+        {
+            "item": "Voice tagline: human phone recording",
+            "quantity": 1,
+            "unit_cost": 0,
+            "subtotal": 0
+        },
+        {
+            "item": "Music bed: Stable Audio 2.5 on fal, one generation",
+            "quantity": 1,
+            "unit_cost": 0.2,
+            "subtotal": 0.2
+        },
+        {
+            "item": "Sound effects: MMAudio v2 on fal, ~17 s of scene clips at $0.001/s",
+            "quantity": 17,
+            "unit_cost": 0.001,
+            "subtotal": 0.02
+        },
+        {
+            "item": "Local FFmpeg audio mix and loudness normalisation",
+            "quantity": 1,
+            "unit_cost": 0,
+            "subtotal": 0
+        },
+        {
+            "item": "Paid upscaling",
+            "quantity": 0,
+            "unit_cost": 0,
+            "subtotal": 0
+        }
+    ],
+    "optional_line_items": [
+        {
+            "item": "AI voice fallback: ElevenLabs Multilingual v2 on fal, one take (short requests may bill at the 1,000-character minimum)",
+            "quantity": 1,
+            "unit_cost": 0.1,
+            "subtotal": 0.1,
+            "approved": false
+        }
+    ],
+    "estimated_generation_total": 0.93,
+    "estimated_total_with_optional_ai_voice": 1.03,
+    "tax_fee_headroom_within_first_pass_limit": 0.22,
+    "retry_allowance": 0,
+    "paid_retries_require_separate_approval": true,
+    "sources": [
+        "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo",
+        "https://fal.ai/models/fal-ai/bytedance/seedream/v4/edit",
+        "https://fal.ai/models/fal-ai/stable-audio-25/text-to-audio",
+        "https://fal.ai/models/fal-ai/mmaudio-v2",
+        "https://fal.ai/models/fal-ai/elevenlabs/tts/multilingual-v2"
+    ],
+    "controls": [
+        "Get explicit approval before any billable request.",
+        "Approval of first pass does not authorize remaining hard-cap balance.",
+        "Check current quoted charge including taxes/fees before submission; if unavailable or uncertain stop.",
+        "Maintain spent plus reserved in-flight cost; never exceed approved limit or $10 total including any taxes/fees.",
+        "Sequential requests, one output per request. No automatic retries, paid upgrades or upscaling. Audio generation only as listed above.",
+        "If a request times out, reconcile status and billing before another request; never blindly resubmit.",
+        "No account top-up or purchase exceeding remaining total cap. If provider requires a larger minimum deposit, stop and report.",
+        "Wan endpoint lists retirement on January 4, 2027. Recheck availability; no automatic model substitution."
+    ]
 }
