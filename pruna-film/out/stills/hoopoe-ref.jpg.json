@@ -1,0 +1,23 @@
+{
+  "model": "p-image",
+  "input": {
+    "prompt": "Photoreal wildlife photograph of a single Eurasian hoopoe (Upupa epops) perched on a pale limestone rock, side profile, crest fully fanned with black tips, orange-buff body, bold black-and-white barred wings, long slender down-curved bill, soft golden morning light, plain blurred mountain background, sharp feather detail Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "1:1"
+  },
+  "result": {
+    "id": "b6qtjxsz5drmr0d20dvaceb4b4",
+    "model": "p-image",
+    "input": {
+      "aspect_ratio": "1:1",
+      "prompt": "Photoreal wildlife photograph of a single Eurasian hoopoe (Upupa epops) perched on a pale limestone rock, side profile, crest fully fanned with black tips, orange-buff body, bold black-and-white barred wings, long slender down-curved bill, soft golden morning light, plain blurred mountain background, sharp feather detail Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks."
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/b6qtjxsz5drmr0d20dvaceb4b4",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.432895342
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/NnbvSHlWKjY8PRT2yISEqgsH3EWlmRMraf4Efw4R1COrEKkXA/99ec2703-91d6-444d-8e5a-5a2d700f4102.jpg"
+  }
+}

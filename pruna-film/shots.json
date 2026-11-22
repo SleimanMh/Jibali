@@ -26,7 +26,7 @@
                 "@hoopoe-ref"
             ],
             "input": {
-                "prompt": "Using image 1 as the exact location (Rashaya village with red tiled roofs below the long snow-capped ridge of Mount Hermon, known in Arabic as Jabal al-Sheikh or Haramoun), create a photoreal cinematic sunrise view with the snowy summit of Jabal al-Sheikh filling the upper frame. Add the hoopoe from image 2 flying across the foreground above the mountain, wings spread showing bold black-and-white bars, crest folded. Warm low sun, light haze in the valley, 35mm film look. No text.",
+                "prompt": "Keep the exact landscape of image 1: Mount Hermon (Jabal al-Sheikh, Haramoun) is a LONG, BROAD, gently rounded massif whose snow-covered ridge stretches almost flat across the whole horizon, with several soft summits; it is NOT a cone-shaped volcano and has no single pointed peak. In the lower third, the village of Rashaya with stone houses and red tiled roofs on the green hillside, as in image 1. Photoreal cinematic sunrise, warm low sun from the right, light haze in the valley. The hoopoe from image 2 flies across the middle of the frame from left to right, seen from the side in a three-quarter view, wings spread mid-beat showing the black-and-white bars, crest folded back, long curved bill pointing right. 35mm film look. No text.",
                 "aspect_ratio": "9:16"
             }
         },
@@ -83,7 +83,7 @@
             "start": 4,
             "use_seconds": 3,
             "image": "@02-wheat",
-            "prompt": "The hoopoe touches down on the limestone rock, its feet grip the stone, it folds its barred wings and raises its fan-shaped crest; ripe wheat sways softly in the breeze. Slow cinematic push-in. Realistic physics."
+            "prompt": "The hoopoe, having just landed on the limestone rock, settles its feet, neatly folds its barred wings and slowly raises and fans its black-tipped crest, then turns its head; ripe wheat sways softly in the warm breeze. Slow cinematic push-in. Realistic physics, the bird keeps exactly the same appearance."
         },
         {
             "id": "03",

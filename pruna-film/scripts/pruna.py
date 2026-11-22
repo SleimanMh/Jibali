@@ -76,19 +76,33 @@ def charge(model, est, note, dry):
 
 
 # ------------------------------------------------------------------ HTTP
+class ApiError(Exception):
+    pass
+
+
+def refund_last(reason):
+    """Undo the last reservation when the submission never reached the model (not billed)."""
+    lg = ledger()
+    if lg["requests"]:
+        r = lg["requests"].pop()
+        lg["spent_estimate"] = round(lg["spent_estimate"] - r["estimate"], 4)
+        lg.setdefault("rejected_not_billed", []).append({**r, "reason": reason})
+        LEDGER.write_text(json.dumps(lg, indent=2, ensure_ascii=False) + "\n")
+
+
 def _key():
     # With the proxy-injected network secret any placeholder works; it is replaced in transit.
     return os.environ.get("PRUNA_API_KEY", "injected-by-proxy")
 
 
 def http(method, url, body=None, headers=None, raw=False, timeout=120):
-    h = {"apikey": _key(), **(headers or {})}
+    h = {"apikey": _key(), "User-Agent": "jibali-pipeline/1.0", **(headers or {})}
     req = urllib.request.Request(url, data=body, method=method, headers=h)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
             data = r.read()
     except urllib.error.HTTPError as e:
-        sys.exit(f"HTTP {e.code} from {url}: {e.read()[:500]!r}")
+        raise ApiError(f"HTTP {e.code} from {url}: {e.read()[:500]!r}")
     return data if raw else json.loads(data)
 
 
@@ -104,8 +118,20 @@ def upload(path):
 
 def predict(model, inp, dest):
     """Submit, poll get_url until done, download generation_url to dest. One attempt only."""
-    r = http("POST", f"{API}/predictions", json.dumps({"input": inp}).encode(),
-             {"Content-Type": "application/json", "Model": model})
+    try:
+        r = http("POST", f"{API}/predictions", json.dumps({"input": inp}).encode(),
+                 {"Content-Type": "application/json", "Model": model})
+    except ApiError as e:
+        refund_last(str(e)[:200])
+        sys.exit(f"Submission rejected, nothing generated (ledger refunded): {e}")
+    try:
+        return _finish(model, inp, dest, r)
+    except ApiError as e:
+        sys.exit(f"{model} was submitted but polling/download failed: {e}. Check the Pruna dashboard; "
+                 "do not resubmit until you know whether it ran.")
+
+
+def _finish(model, inp, dest, r):
     t0 = time.time()
     while r.get("status") not in ("succeeded", "failed", "canceled", "error"):
         if "get_url" not in r and "id" not in r:

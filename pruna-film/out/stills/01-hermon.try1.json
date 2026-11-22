@@ -1,0 +1,33 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Using image 1 as the exact location (Rashaya village with red tiled roofs below the long snow-capped ridge of Mount Hermon, known in Arabic as Jabal al-Sheikh or Haramoun), create a photoreal cinematic sunrise view with the snowy summit of Jabal al-Sheikh filling the upper frame. Add the hoopoe from image 2 flying across the foreground above the mountain, wings spread showing bold black-and-white bars, crest folded. Warm low sun, light haze in the valley, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16",
+    "images": [
+      "https://api.pruna.ai/v1/files/OTM0OGZiYTAtNTAwMi00MzA4LTk1NGQtZTdmNTJiM2RjYmZi.jpg",
+      "https://api.pruna.ai/v1/files/MTUxNGFjM2EtNWQwYi00YmZhLThjYmUtYzIwNmYzNDIxYjdi.jpg"
+    ],
+    "turbo": false
+  },
+  "result": {
+    "id": "87wmphbte1rmy0d20dv99ncm78",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/OTM0OGZiYTAtNTAwMi00MzA4LTk1NGQtZTdmNTJiM2RjYmZi.jpg",
+        "https://api.replicate.com/v1/files/MTUxNGFjM2EtNWQwYi00YmZhLThjYmUtYzIwNmYzNDIxYjdi.jpg"
+      ],
+      "prompt": "Using image 1 as the exact location (Rashaya village with red tiled roofs below the long snow-capped ridge of Mount Hermon, known in Arabic as Jabal al-Sheikh or Haramoun), create a photoreal cinematic sunrise view with the snowy summit of Jabal al-Sheikh filling the upper frame. Add the hoopoe from image 2 flying across the foreground above the mountain, wings spread showing bold black-and-white bars, crest folded. Warm low sun, light haze in the valley, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/87wmphbte1rmy0d20dv99ncm78",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 4.772985519
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/f1cs85eaV4mjk0CbufhsuAFIUvBda53Geterf92c7KfieEKkXA/8491f4d7-a098-4394-a1e7-b2f5f5022da4.jpeg"
+  }
+}

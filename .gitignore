@@ -1,1 +1,5 @@
-pruna-film/out/
+!pruna-film/out/
+pruna-film/out/*
+!pruna-film/out/stills/
+!pruna-film/out/clips-480p/
+!pruna-film/out/preview-hoopoe-7s.mp4

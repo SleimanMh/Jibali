@@ -1,0 +1,33 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Keep the exact landscape of image 1: Mount Hermon (Jabal al-Sheikh, Haramoun) is a LONG, BROAD, gently rounded massif whose snow-covered ridge stretches almost flat across the whole horizon, with several soft summits; it is NOT a cone-shaped volcano and has no single pointed peak. In the lower third, the village of Rashaya with stone houses and red tiled roofs on the green hillside, as in image 1. Photoreal cinematic sunrise, warm low sun from the right, light haze in the valley. The hoopoe from image 2 flies across the middle of the frame from left to right, seen from the side in a three-quarter view, wings spread mid-beat showing the black-and-white bars, crest folded back, long curved bill pointing right. 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16",
+    "images": [
+      "https://api.pruna.ai/v1/files/NDk1NmU0ZDEtMTM2ZS00OTUwLTg4YWItMjBhODU1YzgzNDg3.jpg",
+      "https://api.pruna.ai/v1/files/MzAwMTIxMzMtYjVmNS00ZWU5LWE3MzUtZDMxNjE0Y2JjMzg2.jpg"
+    ],
+    "turbo": false
+  },
+  "result": {
+    "id": "0d97stg8wsrmr0d20dvv7zn4c0",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/NDk1NmU0ZDEtMTM2ZS00OTUwLTg4YWItMjBhODU1YzgzNDg3.jpg",
+        "https://api.replicate.com/v1/files/MzAwMTIxMzMtYjVmNS00ZWU5LWE3MzUtZDMxNjE0Y2JjMzg2.jpg"
+      ],
+      "prompt": "Keep the exact landscape of image 1: Mount Hermon (Jabal al-Sheikh, Haramoun) is a LONG, BROAD, gently rounded massif whose snow-covered ridge stretches almost flat across the whole horizon, with several soft summits; it is NOT a cone-shaped volcano and has no single pointed peak. In the lower third, the village of Rashaya with stone houses and red tiled roofs on the green hillside, as in image 1. Photoreal cinematic sunrise, warm low sun from the right, light haze in the valley. The hoopoe from image 2 flies across the middle of the frame from left to right, seen from the side in a three-quarter view, wings spread mid-beat showing the black-and-white bars, crest folded back, long curved bill pointing right. 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/0d97stg8wsrmr0d20dvv7zn4c0",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 3.475535543
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/wzzhBeYgZmwMCi5ZhbalGhGC6JPM2PilhljCkoMX5EzwCFyLA/602a1c79-f44f-4d6b-a103-37d0cf4a0b7b.jpeg"
+  }
+}
