@@ -1,0 +1,34 @@
+{
+  "model": "wan-i2v",
+  "input": {
+    "prompt": "Real-time video: a pinch of coarse salt falls from the fingertips into the flour and a thin clear stream of water keeps pouring from the jug into the bowl, steady camera.",
+    "image": "https://api.pruna.ai/v1/files/YTNmNTYyOTItZTZiOS00Yzc2LTkwY2UtODAyYmNhZGMwMmQ4.jpg",
+    "num_frames": 81,
+    "resolution": "480p",
+    "frames_per_second": 16,
+    "interpolate_output": true,
+    "go_fast": false
+  },
+  "result": {
+    "id": "azg4pxgbnnrmy0d20ehbx24cng",
+    "model": "wan-i2v",
+    "input": {
+      "frames_per_second": 16,
+      "go_fast": false,
+      "image": "https://api.replicate.com/v1/files/YTNmNTYyOTItZTZiOS00Yzc2LTkwY2UtODAyYmNhZGMwMmQ4.jpg",
+      "interpolate_output": true,
+      "num_frames": 81,
+      "prompt": "Real-time video: a pinch of coarse salt falls from the fingertips into the flour and a thin clear stream of water keeps pouring from the jug into the bowl, steady camera.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/azg4pxgbnnrmy0d20ehbx24cng",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 72.503605245
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/7mrndhPRF4ZyDJ9VO37SOf1o7lyObbT5ti7XkA191EgUZFyLA/output_30fps.mp4"
+  }
+}

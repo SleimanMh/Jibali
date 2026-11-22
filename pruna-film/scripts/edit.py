@@ -50,6 +50,19 @@ PLANS = {
         (C2 / "stack.mp4", 1.50, 48),        # more steam later in the clip
     ]),
 }
+W2 = OUT / "v2" / "wan-480p"
+# v3: Wan 2.2 where the P-Video clip overacted; audio borrowed from the P-Video clip of the same scene (Wan has no sound)
+PLANS["v3"] = dict(xf=10, call=2.8, captions="arabic-captions-v2.ass", out="jibali-v3-480p.mp4", cuts=[
+    (C2 / "hermon.mp4", 0.60, 60),
+    (C1 / "01.mp4", 0.30, 64),
+    (C2 / "wheat.mp4", 1.00, 52),
+    (W2 / "grain.mp4", 0.30, 56, C2 / "grain.mp4"),
+    (W2 / "saltwater.mp4", 0.20, 52, C2 / "saltwater.mp4"),
+    (W2 / "knead.mp4", 0.30, 56, C2 / "knead.mp4"),
+    (C2 / "fire.mp4", 1.00, 48),
+    (W2 / "sajbread.mp4", 0.30, 52, C2 / "sajbread.mp4"),
+    (W2 / "stack.mp4", 0.50, 48, C2 / "stack.mp4"),
+])
 PLAN = PLANS[sys.argv[1] if len(sys.argv) > 1 else "v1"]
 CUTS, XF = PLAN["cuts"], PLAN["xf"]
 
@@ -72,23 +85,30 @@ def hoopoe_call(path):
 def main():
     n_reveal = int(subprocess.run(["ffprobe", "-v", "error", "-count_packets", "-select_streams", "v:0", "-show_entries",
                                    "stream=nb_read_packets", "-of", "csv=p=0", str(REVEAL)], capture_output=True, text=True).stdout)
-    total = sum(n for _, _, n in CUTS) - XF * (len(CUTS) - 1) - XF_REVEAL + n_reveal
+    total = sum(c[2] for c in CUTS) - XF * (len(CUTS) - 1) - XF_REVEAL + n_reveal
     assert total == TOTAL, f"timeline is {total} frames, expected {TOTAL}"
 
     call = OUT / "hoopoe-call.wav"
     hoopoe_call(call)
     music = REPO / "audio/music/bed.wav"
 
-    inputs, v, a = [], [], []
-    for i, (clip, t_in, n) in enumerate(CUTS):
+    inputs, v, a, extra = [], [], [], []
+    for i, cut in enumerate(CUTS):
+        clip, t_in, n = cut[:3]
         inputs += ["-i", str(clip)]
         s = round(t_in * FPS)
         v.append(f"[{i}:v]fps={FPS},trim=start_frame={s}:end_frame={s + n},setpts=PTS-STARTPTS,"
                  f"scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,setsar=1,format=yuv420p,settb=1/{FPS}[v{i}]")
-        a.append(f"[{i}:a]atrim=start={s / FPS}:duration={n / FPS},asetpts=PTS-STARTPTS,"
+        asrc = f"{i}:a"
+        if len(cut) > 3:                       # sound from another clip of the same scene
+            extra.append(str(cut[3])); asrc = f"EXTRA{len(extra) - 1}:a"
+        a.append(f"[{asrc}]atrim=start={s / FPS}:duration={n / FPS},asetpts=PTS-STARTPTS,"
                  f"aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a{i}]")
     k = len(CUTS)
     inputs += ["-i", str(REVEAL), "-i", str(music), "-i", str(call)]
+    for j, e in enumerate(extra):
+        inputs += ["-i", e]
+        a = [x.replace(f"[EXTRA{j}:a]", f"[{k + 3 + j}:a]") for x in a]
     v.append(f"[{k}:v]fps={FPS},setsar=1,format=yuv420p,settb=1/{FPS}[v{k}]")
 
     # picture: dissolve chain
@@ -134,7 +154,8 @@ def main():
        "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2", "-movflags", "+faststart", str(final))
     print(f"wrote {final.relative_to(REPO)}")
     starts, t = [], 0
-    for i, (_, _, n) in enumerate(CUTS):
+    for i, cut in enumerate(CUTS):
+        n = cut[2]
         starts.append(round(t / FPS, 2)); t += n - XF
     print("scene starts (s):", starts, "| reveal from", round((TOTAL - n_reveal) / FPS, 2), "fully in at", round((TOTAL - n_reveal + XF_REVEAL) / FPS, 2))
 

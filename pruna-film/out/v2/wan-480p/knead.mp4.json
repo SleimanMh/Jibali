@@ -1,0 +1,34 @@
+{
+  "model": "wan-i2v",
+  "input": {
+    "prompt": "Real-time video: the two hands slowly press down into the dough with the heels of the palms and lift again, once, a little flour dust in the air; the hands keep five fingers and their shape, the dough stays one piece, steady camera.",
+    "image": "https://api.pruna.ai/v1/files/NmMxY2ZhNmEtYWY5Mi00NTMyLWJlMTAtZTY3YzU5MTM5MTVk.jpg",
+    "num_frames": 81,
+    "resolution": "480p",
+    "frames_per_second": 16,
+    "interpolate_output": true,
+    "go_fast": false
+  },
+  "result": {
+    "id": "qcsvc0bvchrmt0d20efr1fgh00",
+    "model": "wan-i2v",
+    "input": {
+      "frames_per_second": 16,
+      "go_fast": false,
+      "image": "https://api.replicate.com/v1/files/NmMxY2ZhNmEtYWY5Mi00NTMyLWJlMTAtZTY3YzU5MTM5MTVk.jpg",
+      "interpolate_output": true,
+      "num_frames": 81,
+      "prompt": "Real-time video: the two hands slowly press down into the dough with the heels of the palms and lift again, once, a little flour dust in the air; the hands keep five fingers and their shape, the dough stays one piece, steady camera.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/qcsvc0bvchrmt0d20efr1fgh00",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/gPWavCH3s0b7BF3MD1g9mTfkmaK9qKZ4cElPbQAbmbCMYFyLA/output_30fps.mp4",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 95.611364422
+      }
+    }
+  }
+}

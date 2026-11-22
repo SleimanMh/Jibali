@@ -88,6 +88,9 @@ NATURAL = ("Keep this exact scene, composition and subject, but make it look lik
 WAN_MOTION = {
     "sajbread": "Handheld phone video, real time: the very thin bread on the hot saj dome gently puffs and small bubbles rise and brown, faint steam drifts up. Nothing changes shape unnaturally.",
     "stack": "Handheld phone video, real time: faint steam rises from the warm stack of thin saj bread on the cloth, the camera moves very slightly. Nothing changes shape.",
+    "knead": "Real-time video: the two hands slowly press down into the dough with the heels of the palms and lift again, once, a little flour dust in the air; the hands keep five fingers and their shape, the dough stays one piece, steady camera.",
+    "grain": "Real-time video: whole-wheat kernels keep pouring steadily from the tilted wooden bowl onto the millstone and pile up, the hand holds the bowl still, steady camera.",
+    "saltwater": "Real-time video: a pinch of coarse salt falls from the fingertips into the flour and a thin clear stream of water keeps pouring from the jug into the bowl, steady camera.",
 }
 
 
@@ -102,6 +105,8 @@ def natural(ids, dry):
 def wan(ids, dry, res="480p"):
     for sid in ids:
         kf = OUT / "natural" / f"{sid}.jpg"
+        if not kf.exists():
+            kf = OUT / "keyframes" / f"{sid}.jpg"
         dest = OUT / f"wan-{res}" / f"{sid}.mp4"
         inp = {"prompt": WAN_MOTION[sid], "image": "DRY" if dry else P.upload(kf), "num_frames": 81, "resolution": res,
                "frames_per_second": 16, "interpolate_output": True, "go_fast": False}

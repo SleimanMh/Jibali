@@ -1,0 +1,34 @@
+{
+  "model": "wan-i2v",
+  "input": {
+    "prompt": "Real-time video: whole-wheat kernels keep pouring steadily from the tilted wooden bowl onto the millstone and pile up, the hand holds the bowl still, steady camera.",
+    "image": "https://api.pruna.ai/v1/files/ZmI4MzRiNjItMDc0Yy00MmYyLWFmZjItZWNhZjFjYTk2ZjRj.jpg",
+    "num_frames": 81,
+    "resolution": "480p",
+    "frames_per_second": 16,
+    "interpolate_output": true,
+    "go_fast": false
+  },
+  "result": {
+    "id": "mgjk31zqydrmy0d20ega53fecm",
+    "model": "wan-i2v",
+    "input": {
+      "frames_per_second": 16,
+      "go_fast": false,
+      "image": "https://api.replicate.com/v1/files/ZmI4MzRiNjItMDc0Yy00MmYyLWFmZjItZWNhZjFjYTk2ZjRj.jpg",
+      "interpolate_output": true,
+      "num_frames": 81,
+      "prompt": "Real-time video: whole-wheat kernels keep pouring steadily from the tilted wooden bowl onto the millstone and pile up, the hand holds the bowl still, steady camera.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/mgjk31zqydrmy0d20ega53fecm",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/Oou336F2rk7FDpI19SRegtwloNqQcekFzgT7eAbUFbL6iVIvA/output_30fps.mp4",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 68.285843201
+      }
+    }
+  }
+}
