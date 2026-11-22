@@ -1,0 +1,14 @@
+﻿CONVERSATION HANDOVER — SUMMARY, NOT VERBATIM TRANSCRIPT
+
+1. The user wanted affordable cinematic product marketing for natural whole-wheat Lebanese saj from Rashaya, initially exploring Wan 2.2 as a lower-cost route than Higgsfield. Initial concept: mountains, wheat mill, saj bread and Arabic branding.
+2. An initial four-panel generic concept was generated. The user then supplied a WhatsApp ZIP with actual Jibali bread, front/back label and emerald/gold bag photos. A second branded storyboard was generated.
+3. The user supplied images (4)–(7): Rashaya town, Hermon landscape and authentic thin saj stacks. A third storyboard incorporated red tiled roofs, snowy mountain ridge and fine bread layers. Generated packaging text remained imperfect.
+4. The user requested video. A local silent 20-second image slideshow with zooms and Arabic captions was created at 720x1280, 25fps. It was explicitly a preview, not generated scene animation.
+5. The user supplied a detailed 45-second heritage-film brief: hoopoe storyteller, wheat/water/salt/fire, authentic saj, Arabic narration, music and effects. A production manifest and narration SRT were prepared. No fal generation started; fal connection was suggested but not confirmed.
+6. The user requested a cost/model review before spending. Veo 3.1 Standard was proposed for premium 4K with a roughly $70–140 production range, and a $6 pilot. Neither was approved.
+7. The user reduced the brief to 30 seconds, removed narration, retained music/effects, and required cost approval. The production plan was updated, narration file removed, closing titles added, and a $90 cap proposed. It was not approved.
+8. The user completely revised the brief to 20 seconds, absolutely silent, hard total budget $10, affordable essential motion only, original-photo reveal, free editing and no paid upscaling or unapproved retries.
+9. The active files now describe six scenes, five Wan Turbo video requests and seven Seedream stills, $0.71 estimated base generation cost. A $1 all-in first-pass approval was requested; no approval has been given. There is no authorization to use the remaining $10 budget automatically.
+10. The user requested a ZIP containing everything for a friend. This package consolidates the project and reference assets and provides this summary so another person can continue accurately.
+
+Earlier narration text and deleted production versions are not restored as active files. Their superseded requirements are captured here. Original-image generation happened in this chat; no fal video/audio generation or billable API requests were submitted by the assistant.

@@ -1,0 +1,16 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,43,&H00EAF5FF,&H000000FF,&H002A2318,&H80000000,-1,0,0,0,100,100,0,0,1,2,1,2,45,45,170,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.30,0:00:04.80,Default,,0,0,0,,{\fad(350,350)}من قلب راشيا
+Dialogue: 0,0:00:05.20,0:00:09.80,Default,,0,0,0,,{\fad(350,350)}حكاية قمح… وطعم الأصالة
+Dialogue: 0,0:00:10.20,0:00:14.80,Default,,0,0,0,,{\fad(350,350)}خبز صاج بالقمح الكامل
+Dialogue: 0,0:00:15.20,0:00:20.00,Default,,0,0,0,,{\fad(350,500)}جبالي\Nمن قلب راشيا، لعندكن

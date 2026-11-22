@@ -1,0 +1,7 @@
+﻿"id","time","start_frame","end_frame_exclusive","method","input"
+"01","0-4s","0","96","One Wan clip, trim four seconds","assets/01-hermon-hoopoe.png"
+"02","4-7s","96","168","One Wan clip, trim three seconds","assets/02-wheat-hoopoe.png"
+"03","7-10s","168","240","One Wan clip, trim three seconds","assets/03-mill.png"
+"04","10-13s","240","312","Two brief still inserts then one kneading clip","assets/04-kneading.png"
+"05","13-17s","312","408","One Wan clip, trim four seconds","assets/05-saj.png"
+"06","17-20s","408","480","Original product photo with free local cinematic push-in; no paid generation","../../references/bread-2026-11-20/WhatsApp Image 2026-11-20 at 8.38.25 PM.jpeg"

@@ -1,0 +1,75 @@
+﻿JIBALI PROJECT HANDOVER — START HERE
+Prepared 22 November 2026
+
+This package contains the project files, source references, generated storyboards, historical slideshow preview, and a written conversation handover. It is NOT a verbatim chat export and does not transfer chat history or connected accounts into another person's account.
+
+CURRENT REQUIREMENTS — THESE SUPERSEDE EARLIER VERSIONS
+20 seconds maximum; vertical 9:16; 1080 x 1920 export; 24 fps; 480 frames.
+Completely silent: no narration, music, sound effects or audio stream.
+Authentic, ultra-photoreal Lebanese heritage mood; wheat, water, salt and fire.
+No yeast, starter or fermentation scenes. Do not alter existing words printed on the actual product label.
+Hoopoe flies over Mount Hermon then lands in a wheat field.
+Original Jibali packaging, Arabic bird logo and green/gold colors must remain exact.
+No paid 4K upscaling; use free local editing and resize if needed.
+Absolute total spending limit: $10 USD. No paid retries without separate approval.
+
+AUTHORITATIVE FILES
+output/brand-film-45/production.json — latest 20-second plan. The old directory name is retained for compatibility; it is NOT a 45-second plan.
+output/brand-film-45/edit-timeline.csv — six-scene frame ranges.
+output/brand-film-45/cost-estimate.json — last checked estimate and controls.
+output/brand-film-45/spend-ledger.json — no spending approved or recorded.
+output/brand-film-45/closing-titles.ass — only the closing Arabic lines.
+
+LATEST TIMELINE
+0–4: Hoopoe flies above Mount Hermon at sunrise.
+4–7: Same hoopoe lands beside golden wheat.
+7–10: Wheat is milled into flour.
+10–13: Salt and water photographic inserts, then kneading motion.
+13–17: Very thin Lebanese saj cooks on a convex griddle over a controlled wood fire.
+17–20: Original product photograph, subtle local push-in, original logo preserved.
+Closing text:
+جبالي
+من قلب الجبل، لقلب البيت.
+
+BUDGET / APPROVAL STATUS
+NO paid fal video or audio generation has started. The latest $1 first-pass proposal has NOT been approved. The user requested this handover instead of approving generation.
+Last verified public estimate, not a guaranteed future quote:
+5 Wan 2.2 Turbo 720p videos x $0.10 = $0.50.
+7 Seedream v4 reference-based stills x $0.03 = $0.21.
+Local FFmpeg editing, original-photo reveal, resize and audio = $0.
+Base estimate = $0.71. Proposed first-pass all-in ceiling = $1, leaving $0.29 for any taxes/fees.
+Absolute total cap remains $10. That is not authorization to spend $10.
+Prices must be rechecked, including all fees. No automatic retries, model changes, extra outputs or top-ups. If a minimum deposit would exceed the budget, stop.
+Wan endpoint lists retirement on January 4, 2027. Availability must be checked.
+https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo
+https://fal.ai/models/fal-ai/bytedance/seedream/v4/edit
+
+AVAILABLE / MISSING
+Included: four original Jibali product photos, original ZIP upload, four Rashaya/saj JFIF references, three generated storyboards, historical 20-second slideshow and its components, production plan and budget files.
+Not yet made: the seven latest-plan keyframes, five AI motion clips and final silent 20-second film. The existing preview is NOT the current final film.
+fal access was not confirmed. The next operator needs their own authorized connection or locally configured API credential; never paste secrets into chat. No credentials are included here.
+Local FFmpeg was available on the original machine. The recipient needs their own installation to edit/export locally.
+
+VISUAL QUALITY NOTES
+The original packaging photographs are authoritative. Earlier generated labels contain lettering differences and must not be used as exact brand artwork.
+The first storyboard used generic scenery/bread. Later references corrected Rashaya to its red tiled roofs and Mount Hermon backdrop, and saj to very thin porous stacked layers.
+Some generated mill imagery is mechanically unsuitable. Create a credible horizontal grain mill reference.
+Cheap single-pass video may fail on wings, feet, hands and dough. Inspect before continuing. Do not silently substitute a slideshow for required physical action. Salt and water are explicitly planned as still inserts to minimize cost.
+720p footage resized to 1080p does not gain native 1080p detail. No guarantee of premium realism from one attempt.
+Use supplied third-party landscape references responsibly; no commercial-use clearance was established in this chat. Do not remove watermarks. No external free stock assets have been licensed or downloaded.
+
+PORTABILITY
+All active reference paths in this handover copy resolve relative to production.json. Keep the folder structure intact.
+The historical preview renderer has been disabled because it produces a superseded 25fps slideshow. Its local path references were made portable in this copy, but it is not the renderer for the active film.
+The original project remains in place. Only the handover copy has portable reference-path adjustments.
+
+NEXT STEPS
+1. Read production.json and this note; retain the silent 20-second brief.
+2. Recheck current rates and access; obtain explicit approval for the proposed spending amount.
+3. Generate/inspect the first hoopoe keyframe and motion clip first ($0.13 base estimate). If poor, stop and seek approval before any paid retry.
+4. Prepare remaining keyframes and clips within approved limit. Inspect mill mechanics, hand anatomy, bread thinness and bird consistency.
+5. Assemble with straight cuts, original-photo reveal and restrained Arabic closing titles.
+6. Verify exactly 480 frames at 24fps, 1080x1920, no audio streams, intact logo and spending within both approved and hard caps.
+
+CONTINUATION PROMPT FOR YOUR FRIEND
+"Continue the JIBALI project in this extracted folder. Read START-HERE.txt and output/brand-film-45/production.json. The active brief is a silent 20-second vertical Reel, with an absolute $10 total cap and no paid retries. No paid generation has been approved. Recheck the $0.71 first-pass estimate and ask for approval before any paid requests. Keep original product packaging exact and use the supplied Rashaya/saj references."

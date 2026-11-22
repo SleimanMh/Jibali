@@ -1,0 +1,53 @@
+﻿{
+    "currency":  "USD",
+    "checked":  "2026-11-22",
+    "hard_total_cap":  10,
+    "approved":  false,
+    "approved_spend_limit":  0,
+    "spent":  0,
+    "proposed_first_pass_limit":  1,
+    "line_items":  [
+                       {
+                           "item":  "Seven reference-based stills",
+                           "quantity":  7,
+                           "unit_cost":  0.03,
+                           "subtotal":  0.21
+                       },
+                       {
+                           "item":  "Five 720p Wan Turbo clips",
+                           "quantity":  5,
+                           "unit_cost":  0.10,
+                           "subtotal":  0.50
+                       },
+                       {
+                           "item":  "Original-photo product reveal, FFmpeg editing, titles, local resize",
+                           "quantity":  1,
+                           "unit_cost":  0,
+                           "subtotal":  0
+                       },
+                       {
+                           "item":  "Audio and paid upscaling",
+                           "quantity":  0,
+                           "unit_cost":  0,
+                           "subtotal":  0
+                       }
+                   ],
+    "estimated_generation_total":  0.71,
+    "tax_fee_headroom_within_first_pass_limit":  0.29,
+    "retry_allowance":  0,
+    "paid_retries_require_separate_approval":  true,
+    "sources":  [
+                    "https://fal.ai/models/fal-ai/wan/v2.2-a14b/image-to-video/turbo",
+                    "https://fal.ai/models/fal-ai/bytedance/seedream/v4/edit"
+                ],
+    "controls":  [
+                     "Get explicit approval before any billable request.",
+                     "Approval of first pass does not authorize remaining hard-cap balance.",
+                     "Check current quoted charge including taxes/fees before submission; if unavailable or uncertain stop.",
+                     "Maintain spent plus reserved in-flight cost; never exceed approved limit or $10 total including any taxes/fees.",
+                     "Sequential requests, one output per request. No automatic retries, paid upgrades, audio or upscaling.",
+                     "If a request times out, reconcile status and billing before another request; never blindly resubmit.",
+                     "No account top-up or purchase exceeding remaining total cap. If provider requires a larger minimum deposit, stop and report.",
+                     "Wan endpoint lists retirement on January 4, 2027. Recheck availability; no automatic model substitution."
+                 ]
+}
