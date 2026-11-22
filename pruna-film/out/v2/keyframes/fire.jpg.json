@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. The dark metal at the top is the curved underside of a traditional Lebanese saj: a convex steel dome like an upside-down wok, resting on stones over an open wood fire of burning logs; there is no stove, no box, no chimney and no pipe.",
+    "images": [
+      "https://api.pruna.ai/v1/files/YTAzNmJjYjUtMmUyNy00NTJkLWIyYWEtNTgxODUxZmUwMjI0.jpg"
+    ],
+    "aspect_ratio": "9:16",
+    "turbo": false
+  },
+  "result": {
+    "id": "ebqv5h4kn9rmy0d20e4t72y5wm",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/YTAzNmJjYjUtMmUyNy00NTJkLWIyYWEtNTgxODUxZmUwMjI0.jpg"
+      ],
+      "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. The dark metal at the top is the curved underside of a traditional Lebanese saj: a convex steel dome like an upside-down wok, resting on stones over an open wood fire of burning logs; there is no stove, no box, no chimney and no pipe.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/ebqv5h4kn9rmy0d20e4t72y5wm",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/mOzOkxcpmMoLAZrK3RY353saomG6Y4AybeDR7LgrheQewUIvA/5d5d8214-e322-4a1e-b34e-2fda013bd81f.jpeg",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.565192184
+      }
+    }
+  }
+}

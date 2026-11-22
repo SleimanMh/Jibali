@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. Hands have natural anatomy with five fingers each.",
+    "images": [
+      "https://api.pruna.ai/v1/files/NGYzNDg3NTctZTcxOS00NzU0LWI3OWUtZGQ4ZjRlOWI2ZGMx.jpg"
+    ],
+    "aspect_ratio": "9:16",
+    "turbo": false
+  },
+  "result": {
+    "id": "d6h6mz7tj5rmw0d20e49f2gwqg",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/NGYzNDg3NTctZTcxOS00NzU0LWI3OWUtZGQ4ZjRlOWI2ZGMx.jpg"
+      ],
+      "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. Hands have natural anatomy with five fingers each.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/d6h6mz7tj5rmw0d20e49f2gwqg",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 2.333079307
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/bbkUuStl5HICI1UpEB7iluO8eE9zgeMpwfCfFEsEr1cifSh8C/db1658e4-58f9-4dec-8b4a-e0c5792ff96a.jpeg"
+  }
+}

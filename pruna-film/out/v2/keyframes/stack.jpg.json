@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text.",
+    "images": [
+      "https://api.pruna.ai/v1/files/MzFlOTg5NmItOTU5NC00OWU4LWExZjYtMzNkZjA5YmNhMWEx.jpg"
+    ],
+    "aspect_ratio": "9:16",
+    "turbo": false
+  },
+  "result": {
+    "id": "ppwh3ra7ysrmt0d20e4rk2ydd8",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/MzFlOTg5NmItOTU5NC00OWU4LWExZjYtMzNkZjA5YmNhMWEx.jpg"
+      ],
+      "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/ppwh3ra7ysrmt0d20e4rk2ydd8",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.868737657
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/zO13nQjnTRoiB5H2luNrXVCz1gfHESlDkyPJkeYs2PALYKkXA/2a3da8a7-6ff8-40e8-9e2a-6f4839244fc9.jpeg"
+  }
+}

@@ -1,0 +1,21 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Scene,Amiri,112,&H00EAF5FF,&H000000FF,&H60000000,&H78000000,-1,0,0,0,100,100,0,0,1,2.5,4,8,80,80,300,1
+Style: Count,Amiri,96,&H0090C8E8,&H000000FF,&H60000000,&H78000000,-1,0,0,0,100,100,0,0,1,1.5,2,8,60,60,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.45,0:00:04.45,Scene,,0,0,0,,{\fad(500,350)\blur1\fs104}‏من جبلِ الشيخ…‏\N{\fs84}‏جاءَ الهدهدُ بالخبر‏
+Dialogue: 1,0:00:04.65,0:00:06.75,Scene,,0,0,0,,{\fad(400,300)\blur1\fs104}‏قمحٌ زرعَهُ أجدادُنا‏\N{\fs84}‏وربّتْهُ الشمسُ والمطر‏
+Dialogue: 1,0:00:06.95,0:00:08.90,Scene,,0,0,0,,{\fad(400,300)\blur1\fs104}‏يدورُ الحجرُ على الحجر‏\N{\fs84}‏فيولدُ الدقيقُ كاملاً‏
+Dialogue: 1,0:00:09.10,0:00:11.55,Scene,,0,0,0,,{\fad(400,300)\blur1\fs104}‏ماءٌ وملحٌ‏\N{\fs84}‏وخميرةٌ طبيعيّةٌ من صبر‏
+Dialogue: 1,0:00:11.85,0:00:14.55,Scene,,0,0,0,,{\fad(350,250)\blur1\fs104}‏وعلى الصاجِ…‏\N{\fs84}‏حكايةُ نار‏
+Dialogue: 0,0:00:14.85,0:00:16.55,Count,,0,0,0,,{\fad(300,250)\an8\pos(540,270)\bord0\shad0\1c&H393C17&\1a&H18&\p1}m 0 0 l 820 0 l 820 232 l 0 232{\p0}
+Dialogue: 0,0:00:14.85,0:00:16.55,Count,,0,0,0,,{\fad(300,250)\an8\pos(540,274)\bord0\shad0\1c&H73A2CE&\1a&H00&\p1}m 0 0 l 780 0 l 780 3 l 0 3{\p0}
+Dialogue: 1,0:00:14.85,0:00:16.55,Count,,0,0,0,,{\fad(300,250)\blur1\fs84}‏قمحٌ، ماءٌ، ملحٌ، خميرةٌ… ونار‏\N{\fs76\c&HEAF5FF&}‏ولا شيءَ سِواها‏

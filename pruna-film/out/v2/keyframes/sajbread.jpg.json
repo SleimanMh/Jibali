@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. The bread is a very thin Lebanese saj on the convex saj dome.",
+    "images": [
+      "https://api.pruna.ai/v1/files/NGU4MTNiZjktOWJkYi00OTFhLTkyN2EtYjVmNWFmYjBkMzE4.jpg"
+    ],
+    "aspect_ratio": "9:16",
+    "turbo": false
+  },
+  "result": {
+    "id": "wjfscfse2drmw0d20e4vgm6t58",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/NGU4MTNiZjktOWJkYi00OTFhLTkyN2EtYjVmNWFmYjBkMzE4.jpg"
+      ],
+      "prompt": "Image 1 is a real photograph. Recreate it as a tall vertical 9:16 photograph of the SAME scene: keep the subject, composition, lighting, colours, textures and every detail exactly as in image 1, and extend the scene naturally above and below. Remove all overlaid text, Arabic captions, time labels, frames and borders. Natural camera photograph, photoreal, no stylisation, no added objects, no text. The bread is a very thin Lebanese saj on the convex saj dome.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/wjfscfse2drmw0d20e4vgm6t58",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 2.926237705
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/GtPoQmv3wtI3Plynx1V7XUlkRfYbX1yDeD2kDcwzCShGYKkXA/26a9cbd3-18e3-42ef-b171-eb05a9f32436.jpeg"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "currency": "USD",
   "approved_limit": 2.5,
-  "spent_estimate": 1.11,
+  "spent_estimate": 1.6,
   "requests": [
     {
       "time": "2026-11-22T13:33:30",
@@ -97,6 +97,78 @@
       "time": "2026-11-22T13:41:00",
       "model": "p-video-2-pro",
       "note": "clip 05 480p quality",
+      "estimate": 0.2
+    },
+    {
+      "time": "2026-11-22T13:53:31",
+      "model": "p-image-edit",
+      "note": "v2 keyframe hermon",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:53:38",
+      "model": "p-image-edit",
+      "note": "v2 keyframe wheat",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:53:45",
+      "model": "p-image-edit",
+      "note": "v2 keyframe grain",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:53:51",
+      "model": "p-image-edit",
+      "note": "v2 keyframe saltwater",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:53:58",
+      "model": "p-image-edit",
+      "note": "v2 keyframe knead",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:54:04",
+      "model": "p-image-edit",
+      "note": "v2 keyframe fire",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:54:11",
+      "model": "p-image-edit",
+      "note": "v2 keyframe sajbread",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:54:18",
+      "model": "p-image-edit",
+      "note": "v2 keyframe stack",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:54:37",
+      "model": "p-image-edit",
+      "note": "v2 keyframe fire",
+      "estimate": 0.01
+    },
+    {
+      "time": "2026-11-22T13:54:50",
+      "model": "p-video-2-pro",
+      "note": "v2 clip hermon 480p speed",
+      "estimate": 0.1
+    },
+    {
+      "time": "2026-11-22T13:55:08",
+      "model": "p-video-2-pro",
+      "note": "v2 clip wheat 480p speed",
+      "estimate": 0.1
+    },
+    {
+      "time": "2026-11-22T13:55:25",
+      "model": "p-video-2-pro",
+      "note": "v2 clip grain 480p quality",
       "estimate": 0.2
     }
   ],

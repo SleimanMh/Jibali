@@ -5,3 +5,8 @@ pruna-film/out/*
 !pruna-film/out/preview-hoopoe-7s.mp4
 !pruna-film/out/jibali-480p-demo.mp4
 !pruna-film/out/reveal-3.4s.mp4
+!pruna-film/out/v2/
+pruna-film/out/v2/*
+!pruna-film/out/v2/keyframes/
+!pruna-film/out/v2/clips-480p/
+!pruna-film/out/jibali-v2-480p.mp4

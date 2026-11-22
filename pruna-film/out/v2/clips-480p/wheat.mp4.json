@@ -1,0 +1,34 @@
+{
+  "model": "p-video-2-pro",
+  "input": {
+    "prompt": "Ripe wheat ears sway gently in a light mountain breeze, awns catch the backlight, shallow depth of field, very slow push-in. Real documentary footage shot on a cinema camera, natural real-time motion, realistic physics, every object keeps its exact shape and size, no morphing, no warping, no new objects, no text.",
+    "image": "https://api.pruna.ai/v1/files/NjdhNTllMjktYjVjMS00MTY2LWI5Y2EtN2QyNjFiNDI4MzZk.jpg",
+    "duration": 5,
+    "resolution": "480p",
+    "mode": "speed",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "qpvf960bmhrmw0d20e5abhnzbr",
+    "model": "p-video-2-pro",
+    "input": {
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "image": "https://api.replicate.com/v1/files/NjdhNTllMjktYjVjMS00MTY2LWI5Y2EtN2QyNjFiNDI4MzZk.jpg",
+      "mode": "speed",
+      "prompt": "Ripe wheat ears sway gently in a light mountain breeze, awns catch the backlight, shallow depth of field, very slow push-in. Real documentary footage shot on a cinema camera, natural real-time motion, realistic physics, every object keeps its exact shape and size, no morphing, no warping, no new objects, no text.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/qpvf960bmhrmw0d20e5abhnzbr",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/4WlCga132to3CpkffsECLG7suDzbT1W7qKHet0BrjyoVyUIvA/dc1231af-f816-493e-904a-3d07f4a060e3.mp4",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 15.045242938,
+        "model_execution_time": 2.034,
+        "prompt_upsampler_execution_time": 3.008
+      }
+    }
+  }
+}
