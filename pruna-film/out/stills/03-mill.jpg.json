@@ -1,0 +1,23 @@
+{
+  "model": "p-image",
+  "input": {
+    "prompt": "Photoreal cinematic close-up inside an old Lebanese stone mill: a pair of round, flat millstones lying HORIZONTALLY, one on top of the other, like two thick stone discs; the upper runner stone turns flat around a vertical axis. It is NOT an upright wheel. Whole-wheat kernels trickle from a wooden hopper into the round hole in the centre of the upper stone, and fine light-brown whole-wheat flour with bran specks spills out from the narrow gap between the two stones onto the stone platform and into a wooden trough. Warm window light, flour dust in the air, limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "07xscydvahrmy0d20dxvkb8m5m",
+    "model": "p-image",
+    "input": {
+      "aspect_ratio": "9:16",
+      "prompt": "Photoreal cinematic close-up inside an old Lebanese stone mill: a pair of round, flat millstones lying HORIZONTALLY, one on top of the other, like two thick stone discs; the upper runner stone turns flat around a vertical axis. It is NOT an upright wheel. Whole-wheat kernels trickle from a wooden hopper into the round hole in the centre of the upper stone, and fine light-brown whole-wheat flour with bran specks spills out from the narrow gap between the two stones onto the stone platform and into a wooden trough. Warm window light, flour dust in the air, limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks."
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/07xscydvahrmy0d20dxvkb8m5m",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.428248063
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/fBQXOUotx21QCKm4mRXanPyn9HLY60R4oblB6IKveVPTKKkXA/24c7b0f3-6d28-4b99-90bc-e12baf19a98e.jpg"
+  }
+}

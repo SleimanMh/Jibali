@@ -1,0 +1,31 @@
+{
+  "model": "p-image-edit",
+  "input": {
+    "prompt": "Photoreal cinematic shot of traditional Lebanese saj baking: a large dark steel saj, a CONVEX DOME shaped like an upside-down wok curving upward, set on stones over a small controlled wood fire. A very large, round, paper-thin whole-wheat bread, almost translucent, thin and porous exactly like the bread in image 1, is draped over the top of the dome and follows its curve, its edges hanging down the sides, with small golden-brown bubbles and spots. It is NOT a flat pan and NOT a thick flatbread. A stack of finished thin folded saj beside it, warm rustic mountain terrace at dusk, ember glow, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16",
+    "images": [
+      "https://api.pruna.ai/v1/files/NjRiMjQ5Y2UtYWM3Mi00ZjQyLWFiZTctZjRjMTQyZGMxODJm.jpg"
+    ],
+    "turbo": false
+  },
+  "result": {
+    "id": "sac1ptzcrxrmw0d20dxrk3ev2c",
+    "model": "p-image-edit",
+    "input": {
+      "aspect_ratio": "9:16",
+      "images": [
+        "https://api.replicate.com/v1/files/NjRiMjQ5Y2UtYWM3Mi00ZjQyLWFiZTctZjRjMTQyZGMxODJm.jpg"
+      ],
+      "prompt": "Photoreal cinematic shot of traditional Lebanese saj baking: a large dark steel saj, a CONVEX DOME shaped like an upside-down wok curving upward, set on stones over a small controlled wood fire. A very large, round, paper-thin whole-wheat bread, almost translucent, thin and porous exactly like the bread in image 1, is draped over the top of the dome and follows its curve, its edges hanging down the sides, with small golden-brown bubbles and spots. It is NOT a flat pan and NOT a thick flatbread. A stack of finished thin folded saj beside it, warm rustic mountain terrace at dusk, ember glow, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+      "turbo": false
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/sac1ptzcrxrmw0d20dxrk3ev2c",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.560399464
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/Z2E06wHeauXuKqHnNTIAtudvYCkovXKkD2ebAAswgvggKKkXA/fcd37474-41e7-4ab3-bde7-6a6398d9c302.jpeg"
+  }
+}

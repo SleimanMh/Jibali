@@ -1,0 +1,23 @@
+{
+  "model": "p-image",
+  "input": {
+    "prompt": "Photoreal cinematic three-quarter view from slightly above of a traditional Lebanese stone grain mill: two SOLID round millstones lie flat, one stacked on the other, each a thick unbroken stone disc with no slots or cuts. A wooden hopper above drops whole-wheat kernels into the small round hole at the centre of the upper stone. Fine light-brown whole-wheat flour with bran specks pours out from the thin gap all around the rim between the two stones and piles up on the circular stone platform around them, then slides into a wooden trough. Warm side light through a small window, flour dust glowing in the air, old limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "dngs9e1xm5rmy0d20dyafcfvrw",
+    "model": "p-image",
+    "input": {
+      "aspect_ratio": "9:16",
+      "prompt": "Photoreal cinematic three-quarter view from slightly above of a traditional Lebanese stone grain mill: two SOLID round millstones lie flat, one stacked on the other, each a thick unbroken stone disc with no slots or cuts. A wooden hopper above drops whole-wheat kernels into the small round hole at the centre of the upper stone. Fine light-brown whole-wheat flour with bran specks pours out from the thin gap all around the rim between the two stones and piles up on the circular stone platform around them, then slides into a wooden trough. Warm side light through a small window, flour dust glowing in the air, old limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks."
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/dngs9e1xm5rmy0d20dyafcfvrw",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.965573781
+      }
+    },
+    "status": "succeeded",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/DtZH5ejLYft7kEpaqiiYwymAXe9fi6tZceEeKMBBZenDaFFyLA/c3c88004-0084-4066-b803-eba9ef47233d.jpg"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": "p-image",
+  "input": {
+    "prompt": "Photoreal cinematic close-up inside an old Lebanese stone water mill: a traditional horizontal millstone pair, the upper runner stone turning on the lower bedstone, whole-wheat kernels trickling from a wooden hopper into the centre eye, fresh bran-flecked whole-wheat flour spilling from the rim into a wooden trough, shafts of warm window light with flour dust in the air, limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "q5n89j0y21rmy0d20dxrdkzmgm",
+    "model": "p-image",
+    "input": {
+      "aspect_ratio": "9:16",
+      "prompt": "Photoreal cinematic close-up inside an old Lebanese stone water mill: a traditional horizontal millstone pair, the upper runner stone turning on the lower bedstone, whole-wheat kernels trickling from a wooden hopper into the centre eye, fresh bran-flecked whole-wheat flour spilling from the rim into a wooden trough, shafts of warm window light with flour dust in the air, limestone walls, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks."
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/q5n89j0y21rmy0d20dxrdkzmgm",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/V1iNkw12NLZFEZN814mXZjR1HCvhXlIRwTCMv6s6sjPbiC5F/4720e5ea-37c3-460f-92cc-5700eb1e1a8b.jpg",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 2.888023083
+      }
+    }
+  }
+}

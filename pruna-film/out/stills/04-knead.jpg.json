@@ -1,0 +1,23 @@
+{
+  "model": "p-image",
+  "input": {
+    "prompt": "Photoreal cinematic close-up of a Lebanese grandmother's hands kneading LIGHT-BROWN WHOLE-WHEAT dough with visible bran flecks (not white dough) in a wide wooden bowl on a rustic table; a little water glistening, a few coarse salt crystals, whole-wheat flour on the fingers and wrists, soft warm window light, natural skin texture, correct anatomy with five fingers on each hand, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "7ek3fapjs1rmr0d20dxsccynpw",
+    "model": "p-image",
+    "input": {
+      "aspect_ratio": "9:16",
+      "prompt": "Photoreal cinematic close-up of a Lebanese grandmother's hands kneading LIGHT-BROWN WHOLE-WHEAT dough with visible bran flecks (not white dough) in a wide wooden bowl on a rustic table; a little water glistening, a few coarse salt crystals, whole-wheat flour on the fingers and wrists, soft warm window light, natural skin texture, correct anatomy with five fingers on each hand, 35mm film look. No text. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks."
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/7ek3fapjs1rmr0d20dxsccynpw",
+    "status": "succeeded",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 1.651562262
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/8E2ryytLWpJhBlWcomKYoa1psBlq3KZl3fFG6N2F6y2MFFyLA/ebc89288-3592-408d-9620-b50dea459d85.jpg"
+  }
+}

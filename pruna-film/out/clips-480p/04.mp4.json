@@ -1,0 +1,34 @@
+{
+  "model": "p-video-2-pro",
+  "input": {
+    "prompt": "The grandmother's hands press, fold and push the whole-wheat dough with the heels of the palms in a calm steady rhythm, a little flour puffs up. Natural hand movement, stable fingers, the bowl stays still. No extra ingredients. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+    "image": "https://api.pruna.ai/v1/files/YzAyNGVmMzItNGZjMC00YzMyLTk1YTItYjc3ZjExYWNhYzUw.jpg",
+    "duration": 5,
+    "resolution": "480p",
+    "mode": "quality",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "hj5v9tys29rmt0d20dy9sg3w7m",
+    "model": "p-video-2-pro",
+    "input": {
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "image": "https://api.replicate.com/v1/files/YzAyNGVmMzItNGZjMC00YzMyLTk1YTItYjc3ZjExYWNhYzUw.jpg",
+      "mode": "quality",
+      "prompt": "The grandmother's hands press, fold and push the whole-wheat dough with the heels of the palms in a calm steady rhythm, a little flour puffs up. Natural hand movement, stable fingers, the bowl stays still. No extra ingredients. Ultra-photoreal cinematic film still, Lebanese mountain heritage, warm golden-hour light, shallow depth of field, natural film grain, 35mm anamorphic look, restrained colour grade with limestone, wheat-gold and deep green tones. No text, no logos, no watermarks.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/hj5v9tys29rmt0d20dy9sg3w7m",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "metadata": {
+      "execution_time": {
+        "prompt_upsampler_execution_time": 3.304,
+        "total_execution_time": 14.304340325,
+        "model_execution_time": 3.673
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/uGwwHm7Be50KEqg4p7W2sKlzUcDTPeiWXExN0kkB6fqRXUIvA/2cb0a335-f200-448b-889f-a30a09811be3.mp4"
+  }
+}

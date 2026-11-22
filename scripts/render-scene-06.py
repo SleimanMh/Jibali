@@ -64,8 +64,11 @@ def window(i: int):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("out")
+    ap.add_argument("--seconds", type=float, default=3.0, help="length (default 3 s = 72 frames)")
     ap.add_argument("--titles", help="ASS file to burn in (preview only); times shifted so 17 s = 0 s")
     args = ap.parse_args()
+    global FRAMES
+    FRAMES = round(args.seconds * FPS)
 
     src = Image.open(SOURCE).convert("RGB")
     sw, sh = src.size
