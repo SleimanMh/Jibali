@@ -41,13 +41,13 @@ PLANS = {
     "v2": dict(xf=10, call=2.8, captions="arabic-captions-v2.ass", out="jibali-v2-480p.mp4", cuts=[
         (C2 / "hermon.mp4", 0.60, 60),
         (C1 / "01.mp4", 0.30, 64),    # the approved hoopoe flight
-        (C2 / "wheat.mp4", 0.80, 52),
-        (C2 / "grain.mp4", 0.80, 56),
-        (C2 / "saltwater.mp4", 0.80, 52),
-        (C2 / "knead.mp4", 0.80, 56),
-        (C2 / "fire.mp4", 0.80, 48),
-        (C2 / "sajbread.mp4", 0.80, 52),
-        (C2 / "stack.mp4", 0.80, 48),
+        (C2 / "wheat.mp4", 1.00, 52),
+        (C2 / "grain.mp4", 1.00, 56),
+        (C2 / "saltwater.mp4", 0.20, 52),    # salt still falling
+        (C2 / "knead.mp4", 0.00, 56),        # first 2.3 s only: later the dough morphs
+        (C2 / "fire.mp4", 1.00, 48),
+        (C2 / "sajbread.mp4", 0.60, 52),
+        (C2 / "stack.mp4", 1.50, 48),        # more steam later in the clip
     ]),
 }
 PLAN = PLANS[sys.argv[1] if len(sys.argv) > 1 else "v1"]

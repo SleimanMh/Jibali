@@ -1,0 +1,34 @@
+{
+  "model": "p-video-2-pro",
+  "input": {
+    "prompt": "Macro: the very thin bread on the hot saj dome gently puffs, small bubbles rise and turn golden, faint steam drifts up, very slow push-in. Real documentary footage shot on a cinema camera, natural real-time motion, realistic physics, every object keeps its exact shape and size, no morphing, no warping, no new objects, no text.",
+    "image": "https://api.pruna.ai/v1/files/NDkwNzE4MjEtMDFlMi00MDMzLThmNWQtM2YwMGRhMjA5OGY1.jpg",
+    "duration": 5,
+    "resolution": "480p",
+    "mode": "speed",
+    "aspect_ratio": "9:16"
+  },
+  "result": {
+    "id": "bzqa4mv6khrmr0d20e5rjkrpgr",
+    "model": "p-video-2-pro",
+    "input": {
+      "aspect_ratio": "9:16",
+      "duration": 5,
+      "image": "https://api.replicate.com/v1/files/NDkwNzE4MjEtMDFlMi00MDMzLThmNWQtM2YwMGRhMjA5OGY1.jpg",
+      "mode": "speed",
+      "prompt": "Macro: the very thin bread on the hot saj dome gently puffs, small bubbles rise and turn golden, faint steam drifts up, very slow push-in. Real documentary footage shot on a cinema camera, natural real-time motion, realistic physics, every object keeps its exact shape and size, no morphing, no warping, no new objects, no text.",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/bzqa4mv6khrmr0d20e5rjkrpgr",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/7KTJoGxcc1YwFljgG1ZHzJ7Tz7BxqRMiPmTK10cwFl7nmC5F/b2142721-febf-459c-8300-977904aa8aea.mp4",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 11.394068868,
+        "model_execution_time": 1.973,
+        "prompt_upsampler_execution_time": 3.195
+      }
+    }
+  }
+}
