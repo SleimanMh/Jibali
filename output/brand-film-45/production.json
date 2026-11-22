@@ -274,5 +274,13 @@
     ],
     "audio_timeline_file": "audio-timeline.csv",
     "closing_voice_file": "audio/voice/tagline.wav",
-    "closing_titles_style": "Amiri (Naskh) font: جبالي in label gold at 150, tagline in cream at 78, 0.45 s fade-in, placed in the green band. Contains an invisible right-to-left mark so the full stop renders at the end of the Arabic sentence."
+    "closing_titles_style": "Amiri (Naskh) font: جبالي in label gold at 150, tagline in cream at 78, 0.45 s fade-in, placed in the green band. Contains an invisible right-to-left mark so the full stop renders at the end of the Arabic sentence.",
+    "illustrated_version": {
+        "status": "DONE 2026-11-22, free and local, no API keys or spending.",
+        "file": "illustrated/jibali-20s-illustrated.mp4",
+        "picture": "Scenes 01-05 as a 2D illustrated heritage film drawn in code (motion/jibali-motion.html, rendered frame by frame in headless Chromium); scene 06 is the real product photo; closing titles at 17-20 s; small Arabic scene words (الجبل، القمح، الطحين، الملح، الماء، العجين، النار).",
+        "audio": "Synthesized in code (scripts/synth-audio.py): Karplus-Strong oud-like melody in maqam Bayati on D with the quarter-tone E, ney-like drone, light baladi frame drum from 7.2 s, and per-scene natural sounds including a synthesized hoopoe call. Mixed at -14 LUFS / -1.5 dBTP. No voice yet.",
+        "rebuild": "scripts/build-illustrated-film.sh",
+        "note": "Stylized alternative to the photoreal brief, which still requires fal generation."
+    }
 }

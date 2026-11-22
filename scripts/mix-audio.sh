@@ -106,10 +106,10 @@ PRE="$(IFS=';'; echo "${FILTERS[*]}");$(IFS=''; echo "${MIX[*]}")amix=inputs=${#
 # --- Two-pass loudness normalisation ----------------------------------------
 echo "Measuring loudness…"
 MEAS=$(ffmpeg -hide_banner -nostats "${INPUTS[@]}" -filter_complex \
-  "$PRE,loudnorm=I=$TARGET_LUFS:TP=-1:LRA=11:print_format=json[a]" -map "[a]" -f null - 2>&1 \
+  "$PRE,loudnorm=I=$TARGET_LUFS:TP=-1.5:LRA=11:print_format=json[a]" -map "[a]" -f null - 2>&1 \
   | sed -n '/^{/,/^}/p')
 get() { echo "$MEAS" | sed -n "s/.*\"$1\" : \"\(.*\)\".*/\1/p"; }
-LN="loudnorm=I=$TARGET_LUFS:TP=-1:LRA=11:measured_I=$(get input_i):measured_TP=$(get input_tp):measured_LRA=$(get input_lra):measured_thresh=$(get input_thresh):offset=$(get target_offset):linear=true"
+LN="loudnorm=I=$TARGET_LUFS:TP=-1.5:LRA=11:measured_I=$(get input_i):measured_TP=$(get input_tp):measured_LRA=$(get input_lra):measured_thresh=$(get input_thresh):offset=$(get target_offset):linear=true"
 
 echo "Mixing → $OUT"
 ffmpeg -hide_banner -v error -y "${INPUTS[@]}" -filter_complex \
