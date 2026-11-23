@@ -1,0 +1,36 @@
+{
+  "model": "p-video-2-pro",
+  "input": {
+    "prompt": "One whole, very thin Lebanese saj loaf covers the convex steel. The baker loosens the near edge and uses both hands to peel the entire loaf away in one continuous lift. The exposed steel grows from a narrow strip to half the dome. The last edge releases. The intact full-size loaf sags broadly between her hands. Finish with visible air beneath its lowest edge and the entire empty dome below. Hold that final pose. Camera stays fixed.",
+    "duration": 5,
+    "resolution": "480p",
+    "mode": "quality",
+    "prompt_upsampler": "off",
+    "image": "https://api.pruna.ai/v1/files/ZjI1YTI5NzEtYjg4Ny00ZTc2LWJmOGEtMWFkYjAyNmY2YzRh.jpg",
+    "last_frame_image": "https://api.pruna.ai/v1/files/MmM0MWE0Y2ItODc5Yy00YjU4LWJhN2MtZDY5NzExYWFjOWEx.jpg"
+  },
+  "result": {
+    "id": "wp7sbhdjtnrmy0d2117twe7prw",
+    "model": "p-video-2-pro",
+    "input": {
+      "duration": 5,
+      "image": "https://api.replicate.com/v1/files/ZjI1YTI5NzEtYjg4Ny00ZTc2LWJmOGEtMWFkYjAyNmY2YzRh.jpg",
+      "last_frame_image": "https://api.replicate.com/v1/files/MmM0MWE0Y2ItODc5Yy00YjU4LWJhN2MtZDY5NzExYWFjOWEx.jpg",
+      "mode": "quality",
+      "prompt": "One whole, very thin Lebanese saj loaf covers the convex steel. The baker loosens the near edge and uses both hands to peel the entire loaf away in one continuous lift. The exposed steel grows from a narrow strip to half the dome. The last edge releases. The intact full-size loaf sags broadly between her hands. Finish with visible air beneath its lowest edge and the entire empty dome below. Hold that final pose. Camera stays fixed.",
+      "prompt_upsampler": "off",
+      "resolution": "480p"
+    },
+    "get_url": "https://api.pruna.ai/v1/predictions/status/wp7sbhdjtnrmy0d2117twe7prw",
+    "status": "succeeded",
+    "message": "Generation in progress",
+    "metadata": {
+      "execution_time": {
+        "total_execution_time": 10.890337844,
+        "model_execution_time": 3.466,
+        "prompt_upsampler_execution_time": 0
+      }
+    },
+    "generation_url": "https://api.pruna.ai/v1/predictions/delivery/xezq/1zxi6qJEYz6JMdQ19K7qNw22nYeZ3MwAmfefRdOhxhqRw3ReC/400b4ee0-e61d-439f-a453-2f445ceb89ba.mp4"
+  }
+}

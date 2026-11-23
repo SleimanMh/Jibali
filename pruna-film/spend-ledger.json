@@ -1,7 +1,7 @@
 {
   "currency": "USD",
-  "approved_limit": 2.5,
-  "spent_estimate": 2.47,
+  "approved_limit": 2.7,
+  "spent_estimate": 2.67,
   "requests": [
     {
       "time": "2026-11-22T13:33:30",
@@ -242,6 +242,12 @@
       "model": "wan-i2v",
       "note": "wan 2.2 clip saltwater 480p",
       "estimate": 0.05
+    },
+    {
+      "time": "2026-11-23T12:09:30",
+      "model": "p-video-2-pro",
+      "note": "v3 job 09 (09-Saj 01.jpg->04.jpg) 480p quality",
+      "estimate": 0.2
     }
   ],
   "note": "Raise approved_limit only with the owner's explicit approval. Estimates from list prices; the Pruna dashboard is the source of truth.",
@@ -254,5 +260,6 @@
       "estimate": 0.01,
       "reason": "Cloudflare 1010 (client signature) before reaching the API; not billed"
     }
-  ]
+  ],
+  "approval_v3_pilot": "2026-11-23: owner approved the scene 09 (saj) pilot only: one p-video-2-pro clip, 480p, quality, ~$0.20. Review before any other scene; no automatic paid retries."
 }
